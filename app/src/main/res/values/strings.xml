@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Candidate Portfolio</string>
+    <!-- Terms for GUI Main Activity -->
+    <string name="candidate_name">Abraham Lincoln</string>
+    <string name="running_for">President</string>
+    <string name="state">New Hampshire State</string>
+    <string name="year">2022</string>
+
+    <!-- RESUME child activity -->
+    <string name="resume">Curriculum Vitae</string>
+    <string name="download_resume">Download Resume</string>
+    <string name="mail_resume">Mail Resume</string>
+    <string name="inform_your_email">Inform your email</string>
+    <string name="lorem_ipsum">Abraham Lincoln was an American statesman and lawyer who served as the 16th President of the United States from March 1861 until his assassination in April 1865.
+        \n\nLincoln led the United States through the American Civil War—its bloodiest war and perhaps its greatest moral, constitutional, and political crisis.
+        \n\nCriado em uma família carente na fronteira oeste, Lincoln foi autodidata, tornou-se advogado, líder do Partido Whig, deputado estadual de Illinois durante os anos de 1830 e membro da Câmara dos Representantes por um mandato durante a década de 1840.
+        \n\nLincoln foi assassinado pelo ator e simpatizante confederado John Wilkes Booth.
+        \n\nComo foi o primeiro presidente dos Estados Unidos ter sido assassinado, sua morte levou seu país a entrar em luto.
+        \n\nLincoln tem sido consistentemente considerado por estudiosos e pelo povo como um dos três maiores presidentes dos Estados Unidos.
+        \n\nBorn: February 12, 1809, Larue County, Kentucky, United States
+        \n\nHeight: 1.93 m
+        \n\nAssassinated: April 15, 1865, Petersen House, Washington, D.C., United States
+        \n\nParty: National Union Party
+        \n\nSpouse: Mary Todd Lincoln (m. 1842–1865)
+        \n\nChildren: Robert Todd Lincoln, Edward Baker Lincoln, William Wallace Lincoln, Tad Lincoln
+        \n\n(Fonte: Wikipedia)
+    </string>
+
+    <!-- ELECTION child activity -->
+    <string name="election">Instruções para a eleição</string>
+    <string name="instruction">On election day, go to your polling station, identify yourself, and when it\'s time to vote, enter the number 00 to elect this candidate to the presidency of the republic.</string>
+
+    <!-- LAW PROJECTS child activity -->
+    <string name="law_projects">Projetos de lei</string>
+
+    <!-- CONTACT US child activity -->
+    <string name="contact_us">Contact us</string>
+    <string name="inform_complete_name">Complete name</string>
+    <string name="inform_contact_email">Contact email</string>
+    <string name="inform_message">Let us know your message</string>
+    <string name="send_message">Send message</string>
+
+    <!-- Content for list view of Law Projects -->
+    <string-array name="lawProjects">
+        <item>Law Project 01</item>
+        <item>Law Project 02</item>
+        <item>Law Project 03</item>
+        <item>Law Project 04</item>
+        <item>Law Project 05</item>
+        <item>Law Project 06</item>
+        <item>Law Project 07</item>
+        <item>Law Project 08</item>
+        <item>Law Project 09</item>
+        <item>Law Project 10</item>
+        <item>Law Project 11</item>
+        <item>Law Project 12</item>
+        <item>Law Project 13</item>
+        <item>Law Project 14</item>
+        <item>Law Project 15</item>
+        <item>Law Project 16</item>
+        <item>Law Project 17</item>
+        <item>Law Project 18</item>
+        <item>Law Project 19</item>
+        <item>Law Project 20</item>
+        <item>Law Project 21</item>
+        <item>Law Project 22</item>
+        <item>Law Project 23</item>
+        <item>Law Project 24</item>
+        <item>Law Project 25</item>
+    </string-array>
+
+</resources>

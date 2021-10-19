@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCandidateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="@string/candidate_name"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRunningFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/running_for"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCandidate"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCandidate" />
+
+    <TextView
+        android:id="@+id/textViewState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/state"
+        android:textAlignment="center"
+        android:textColor="#689F38"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCandidate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRunningFor" />
+
+    <TextView
+        android:id="@+id/textViewYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:text="@string/year"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCandidate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewState" />
+
+    <ImageView
+        android:id="@+id/imageViewCandidate"
+        android:layout_width="380dp"
+        android:layout_height="453dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/candidate_name"
+        android:cropToPadding="true"
+        android:src="@drawable/candidate_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCandidateName" />
+
+    <ImageView
+        android:id="@+id/imageViewResume"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/resume"
+        android:src="@drawable/icons8_resume_100_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewElection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCandidate" />
+
+    <ImageView
+        android:id="@+id/imageViewElection"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/election"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewLawProjects"
+        app:layout_constraintStart_toEndOf="@+id/imageViewResume"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCandidate"
+        app:srcCompat="@drawable/icons8_elections_100_yellow" />
+
+    <ImageView
+        android:id="@+id/imageViewLawProjects"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/law_projects"
+        android:src="@drawable/icons8_group_of_projects_100_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewContactUs"
+        app:layout_constraintStart_toEndOf="@+id/imageViewElection"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCandidate" />
+
+    <ImageView
+        android:id="@+id/imageViewContactUs"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/contact_us"
+        android:src="@drawable/icons8_email_128_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLawProjects"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCandidate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
