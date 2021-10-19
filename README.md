@@ -21,7 +21,7 @@ This app is under construction!
 
 
 ## Screenshots
-<kbd><img src="https://user-images.githubusercontent.com/5893219/137830906-0ef23172-6c98-46b8-ba4a-350a6cdca8d6.png" width="480" height="450"></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/5893219/137830906-0ef23172-6c98-46b8-ba4a-350a6cdca8d6.png" width="300" height="450"></kbd>
 
 
 <!-- FOOTER (Author / Visit My Online Resume / Download My PDF Resume) -->
