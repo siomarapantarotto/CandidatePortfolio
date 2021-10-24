@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/CandidatePortfolio/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudioProjects/CandidatePortfolio/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudioProjects/CandidatePortfolio/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2703125" />
         <entry key="..\:/AndroidStudioProjects/CandidatePortfolio/app/src/main/res/layout/activity_contact_us.xml" value="0.17119565217391305" />
         <entry key="..\:/AndroidStudioProjects/CandidatePortfolio/app/src/main/res/layout/activity_election.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/CandidatePortfolio/app/src/main/res/layout/activity_law_projects.xml" value="0.24094202898550723" />

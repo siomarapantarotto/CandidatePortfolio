@@ -1,34 +1,37 @@
 <resources>
     <string name="app_name">Candidate Portfolio</string>
-    <!-- Terms for GUI Main Activity -->
+
+    <!-- Titles for children activities -->
+    <string name="resume">Curriculum Vitae</string>
+    <string name="election">Instructions for Election Day</string>
+    <string name="law_projects">Law Projects</string>
+    <string name="contact_us">Contact us</string>
+
+    <!-- MAIN parent activity -->
     <string name="candidate_name">Abraham Lincoln</string>
     <string name="running_for">President</string>
     <string name="state">New Hampshire State</string>
     <string name="year">2022</string>
 
     <!-- RESUME child activity -->
-    <string name="resume">Curriculum Vitae</string>
     <string name="download_resume">Download Resume</string>
-    <string name="mail_resume">Mail Resume</string>
-    <string name="inform_your_email">Inform your email</string>
     <string name="lorem_ipsum">Abraham Lincoln was an American statesman and lawyer who served as the 16th President of the United States from March 1861 until his assassination in April 1865.
         \n\nLincoln led the United States through the American Civil War—its bloodiest war and perhaps its greatest moral, constitutional, and political crisis.
-        \n\nCriado em uma família carente na fronteira oeste, Lincoln foi autodidata, tornou-se advogado, líder do Partido Whig, deputado estadual de Illinois durante os anos de 1830 e membro da Câmara dos Representantes por um mandato durante a década de 1840.
-        \n\nLincoln foi assassinado pelo ator e simpatizante confederado John Wilkes Booth.
-        \n\nComo foi o primeiro presidente dos Estados Unidos ter sido assassinado, sua morte levou seu país a entrar em luto.
-        \n\nLincoln tem sido consistentemente considerado por estudiosos e pelo povo como um dos três maiores presidentes dos Estados Unidos.
+        \n\nLincoln was born into poverty in a log cabin and was raised on the frontier primarily in Indiana.
+        \n\nHe was self-educated and became a lawyer, Whig Party leader, Illinois state legislator, and U.S. Congressman from Illinois.
+        \n\nIn 1849, he returned to his law practice but became vexed by the opening of additional lands to slavery as a result of the Kansas–Nebraska Act.
+        \n\nHe reentered politics in 1854, becoming a leader in the new Republican Party, and he reached a national audience in the 1858 debates against Stephen Douglas. Lincoln ran for President in 1860, sweeping the North in victory.
         \n\nBorn: February 12, 1809, Larue County, Kentucky, United States
         \n\nHeight: 1.93 m
         \n\nAssassinated: April 15, 1865, Petersen House, Washington, D.C., United States
         \n\nParty: National Union Party
         \n\nSpouse: Mary Todd Lincoln (m. 1842–1865)
         \n\nChildren: Robert Todd Lincoln, Edward Baker Lincoln, William Wallace Lincoln, Tad Lincoln
-        \n\n(Fonte: Wikipedia)
+        \n\n(Source: Wikipedia)
     </string>
 
-    <!-- ELECTION child activity -->
-    <string name="election">Instructions for Election Day</string>
-    <string name="instruction">On election day,
+    <!--  ELECTION child activity -->
+    <string name="election_instructions">On election day,
         \n\n1) Go to your polling station and identify yourself.
         \n\n2) Check your ballot! Make sure you have completely filled in the oval next to your choices. If you vote for more candidates than allowed or if you vote both Yes and No on a measure, it is called an overvote. Your vote will not count for that candidate or measure.
         \n\n3) Review your ballot and prepare to return it. Ensure you have correctly marked your choice for each contest. Your official ballot will contain contests printed on both front and back. If you make an error on your ballot, damage it in any way or lose it, contact the Multnomah County Elections Division at 503-988-3720 to request assistance.
@@ -39,14 +42,10 @@
         In person at an official drop site:
         Deliver the signed and sealed return identification envelope to any official drop site no later than 8:00 p.m. on Election Day. Postage is NOT required if delivered to an official ballot drop box location.and when it\'s time to vote, enter the number 00 to elect this candidate to the presidency of the republic.</string>
 
-    <!-- LAW PROJECTS child activity -->
-    <string name="law_projects">Projetos de lei</string>
-
     <!-- CONTACT US child activity -->
-    <string name="contact_us">Contact us</string>
     <string name="inform_complete_name">Complete name</string>
     <string name="inform_contact_email">Contact email</string>
-    <string name="inform_message">Let us know your message</string>
+    <string name="inform_message">Type here and let us know your message</string>
     <string name="send_message">Send message</string>
 
     <!-- Content for list view of Law Projects -->
