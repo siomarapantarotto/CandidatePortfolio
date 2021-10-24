@@ -1,14 +1,21 @@
 package br.com.siomara.android.candidateportfolio;
-/*
-        Setting a vertical scrollbar to the textViewResume crashed something that made keyboard to
-        cover the editTextTextEmailAddress when it gets the focus. The bug was solved by adding two
-        lines, one in this file, another on the manifest, both related to the editTextTextEmailAddress
-        On this file:
-        android:windowSoftInputMode="adjustPan"
-        On the manifest file:
-        android:windowSoftInputMode="adjustPan"
-        https://stackoverflow.com/questions/3295672/android-soft-keyboard-covers-edittext-field
-*/
+
+/**
+ * Initially, this resume activity was going to have a field for the user to enter his or her email
+ * and by pressing the download button the app would send the resume displayed on the screen to the
+ * informed email and also download a PDF file from a URL. This approach presented a bug that was
+ * fixed. This approach was changed but the solution was documented as a reminder for future apps.
+ *
+ * Solution: Setting a vertical scrollbar to the textViewResume component crashed something that
+ * made the keyboard to cover the editTextTextEmailAddress when it gets the focus. The bug was
+ * solved by adding two lines, one in the xml file, another on the manifest, both related to the
+ * editTextTextEmailAddress.
+ *
+ * On the xml file: android:windowSoftInputMode="adjustPan"
+ * On the manifest file: android:windowSoftInputMode="adjustPan"
+ *
+ * @see https://stackoverflow.com/questions/3295672/android-soft-keyboard-covers-edittext-field
+ */
 
 import android.Manifest;
 import android.app.DownloadManager;
@@ -29,6 +36,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ResumeActivity extends AppCompatActivity {
 
+    // Permission for file download manager stores file.
     private static final int PERMISSION_STORAGE_CODE = 1000;
 
     @Override
@@ -36,29 +44,27 @@ public class ResumeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resume);
 
-        // Configures toolbar.
+        // Configures toolbar title.
         getSupportActionBar().setTitle(R.string.resume);
 
         // Initializes components with XML.
-        TextView txtResume = findViewById(R.id.textViewResume);
         Button btnDownload = findViewById(R.id.buttonDownload);
 
-        // This configures text view resume to scroll vertically but it crashes something that
-        // makes keyboard to cover the email field when it gets the focus. The solution for the
-        // bug is documented on the layout file for this activity (activity_resume.xml).
+        // Scrollbar to work properly is set programmatically.
+        TextView txtResume = findViewById(R.id.textViewResume);
         txtResume.setMovementMethod(ScrollingMovementMethod.getInstance());
 
         // Handles click to download a PDF file from a server.
         btnDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // If OS is Marshmallow or above, handle runtime permission
+                // If OS is Marshmallow or above, handles runtime permission.
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) ==
                             PackageManager.PERMISSION_DENIED) {
                         // Permission denied, request it.
                         String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
-                        // Shows popup for runtime permission
+                        // Shows popup for runtime permission.
                         requestPermissions(permissions, PERMISSION_STORAGE_CODE);
                     } else {
                         // Permission already granted, perform download.
@@ -73,22 +79,22 @@ public class ResumeActivity extends AppCompatActivity {
     }
 
     private void startDownload() {
-        // get url/text from edit text
+        // Sets the url for the file to be downloaded.
         String url = "https://siomara.com.br/ResumePANTAROTTO.pdf";
 
-        // Create download request.
+        // Creates download request.
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
-        // Allow types of network to download files
+        // Allows types of network to download files.
         request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI |
                 DownloadManager.Request.NETWORK_MOBILE);
-        request.setTitle("Download"); // Set title in download notification
-        request.setDescription("Downloading file..."); // Set description in download notification
+        request.setTitle("Candidate Resume"); // Sets title in download notification.
+        request.setDescription("Downloading candidate resume..."); // Sets description in download notification.
 
         request.allowScanningByMediaScanner();
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
         request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "" + System.currentTimeMillis()); // get current timestamp as file name
 
-        // Get download service and enqueue file.
+        // Gets download service and enqueue file.
         DownloadManager manager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
         manager.enqueue(request);
     }

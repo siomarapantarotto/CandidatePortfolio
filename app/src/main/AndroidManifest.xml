@@ -16,7 +16,7 @@
         android:usesCleartextTraffic="true">
 
 
-        <!-- The main/home activity (it has no parent activity) -->
+        <!-- This is the main/home activity (it has no parent activity) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,22 +27,19 @@
             </intent-filter>
         </activity>
 
-        <!-- Children of the main activity -->
+        <!-- These are the children of the main activity -->
         <activity
             android:name=".ResumeActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".LawProjectsActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ElectionActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"
-            android:windowSoftInputMode="adjustPan" />
-
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LawProjectsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ContactUsActivity"
             android:exported="false"
