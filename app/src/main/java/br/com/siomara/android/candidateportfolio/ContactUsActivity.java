@@ -41,7 +41,9 @@ public class ContactUsActivity extends AppCompatActivity {
                 String message = edtMessage.getText().toString().trim();
                 sendPresetEmail(someoneName, someoneEmail, message);
 
-                Log.d("==> CANDIDATE_PORTFOLIO", " ENDING btnSendMessage.setOnClickListener - AFTER sendPresetEmail(someoneName, someoneEmail, message)");
+                // If Log.d is not showing in your Logcat just replace Log.d with Log.wtf Like this:
+                //Log.d("==> CANDIDATE_PORTFOLIO", "ENDING btnSendMessage.setOnClickListener - AFTER sendPresetEmail(someoneName, someoneEmail, message)");
+                Log.wtf("==> CANDIDATE_PORTFOLIO","ENDING btnSendMessage.setOnClickListener - AFTER sendPresetEmail(someoneName, someoneEmail, message)");
             }
         });
 
