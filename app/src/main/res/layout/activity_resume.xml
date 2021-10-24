@@ -10,31 +10,12 @@
         android:id="@+id/textViewResume"
         android:layout_width="380dp"
         android:layout_height="350dp"
-        android:layout_marginTop="16dp"
         android:scrollbars="vertical"
         android:text="@string/lorem_ipsum"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="380dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="24dp"
-        android:drawableStart="@drawable/icons8_download_mail_24_black"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="@string/inform_your_email"
-        android:inputType="textEmailAddress"
-        android:paddingStart="6dp"
-        android:paddingEnd="6dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewResume"
-        android:autofillHints=""
-        android:windowSoftInputMode="adjustPan" />
 
     <Button
         android:id="@+id/buttonDownload"
@@ -47,17 +28,6 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewResume" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!--
-     Setting a vertical scrollbar to the textViewResume crashed something that made keyboard to
-     cover the editTextTextEmailAddress when it gets the focus. The bug was solved by adding two
-     lines, one in this file, another on the manifest, both related to the editTextTextEmailAddress
-     On this file:
-     android:windowSoftInputMode="adjustPan"
-     On the manifest file:
-     android:windowSoftInputMode="adjustPan"
-     https://stackoverflow.com/questions/3295672/android-soft-keyboard-covers-edittext-field
-     -->
