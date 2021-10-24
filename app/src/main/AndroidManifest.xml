@@ -40,7 +40,8 @@
         <activity
             android:name=".ElectionActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
 
         <activity
             android:name=".ContactUsActivity"

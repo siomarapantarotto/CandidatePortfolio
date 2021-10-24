@@ -27,8 +27,17 @@
     </string>
 
     <!-- ELECTION child activity -->
-    <string name="election">Instruções para a eleição</string>
-    <string name="instruction">On election day, go to your polling station, identify yourself, and when it\'s time to vote, enter the number 00 to elect this candidate to the presidency of the republic.</string>
+    <string name="election">Instructions for Election Day</string>
+    <string name="instruction">On election day,
+        \n\n1) Go to your polling station and identify yourself.
+        \n\n2) Check your ballot! Make sure you have completely filled in the oval next to your choices. If you vote for more candidates than allowed or if you vote both Yes and No on a measure, it is called an overvote. Your vote will not count for that candidate or measure.
+        \n\n3) Review your ballot and prepare to return it. Ensure you have correctly marked your choice for each contest. Your official ballot will contain contests printed on both front and back. If you make an error on your ballot, damage it in any way or lose it, contact the Multnomah County Elections Division at 503-988-3720 to request assistance.
+        \n\n4) Prepare to return your voted ballot. Place the ballot in the return envelope. You may use the optional secrecy envelope, but it is not required. Election staff will ensure the secrecy of your ballot.
+        \n\n5) Remember: Read the Voter’s Statement on the return envelope and sign it on the signature line. Your ballot will not be counted if the return envelope is not signed. Every signature is checked against the registration signature on file and the signature must match for the ballot to be counted.
+        \n\n6) Return your ballot.
+        By mail: Using the postage paid return envelope to the signed and sealed. Mail it as soon as possible to arrive at the Multnomah County Elections Division no later than 8:00 p.m. on Election Day. A postmark does not count!
+        In person at an official drop site:
+        Deliver the signed and sealed return identification envelope to any official drop site no later than 8:00 p.m. on Election Day. Postage is NOT required if delivered to an official ballot drop box location.and when it\'s time to vote, enter the number 00 to elect this candidate to the presidency of the republic.</string>
 
     <!-- LAW PROJECTS child activity -->
     <string name="law_projects">Projetos de lei</string>

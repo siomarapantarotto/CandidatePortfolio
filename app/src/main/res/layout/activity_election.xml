@@ -7,26 +7,20 @@
     tools:context=".ElectionActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="340dp"
-        android:layout_height="439dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/textViewInstructions"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="14dp"
+        android:scrollbars="vertical"
         android:text="@string/instruction"
-        android:textAlignment="center"
-        android:textSize="34sp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Under construction!"
-        android:textColor="@color/design_default_color_error"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
