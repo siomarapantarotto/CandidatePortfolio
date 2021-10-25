@@ -28,7 +28,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
         android:backgroundTint="@android:color/background_light"
-        android:drawableTop="@drawable/icons8_download_resume_48_black"
+        android:drawableTop="@drawable/icons8_btn_download_resume_48_black"
         android:text="@string/download_resume"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -78,7 +78,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/resume"
-        android:src="@drawable/icons8_resume_100_green"
+        android:src="@drawable/icons8_menu_resume_100_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageViewElection"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageViewLawProjects"
         app:layout_constraintStart_toEndOf="@+id/imageViewResume"
         app:layout_constraintTop_toBottomOf="@+id/imageViewCandidate"
-        app:srcCompat="@drawable/icons8_elections_100_yellow" />
+        app:srcCompat="@drawable/icons8_menu_election_100_yellow" />
 
     <ImageView
         android:id="@+id/imageViewLawProjects"
@@ -104,7 +104,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/law_projects"
-        android:src="@drawable/icons8_group_of_projects_100_blue"
+        android:src="@drawable/icons8_menu_law_projects_100_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageViewContactUs"
         app:layout_constraintStart_toEndOf="@+id/imageViewElection"
@@ -117,7 +117,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="32dp"
         android:contentDescription="@string/contact_us"
-        android:src="@drawable/icons8_email_128_black"
+        android:src="@drawable/icons8_menu_contact_us_128_black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageViewLawProjects"
